@@ -1,0 +1,139 @@
+h1{
+     font-family: "Oswald", sans-serif;
+	color:darkred;
+}
+:root{
+	--base-color:ghostwhite;
+    --base-variant: white;
+    --text-color: black;
+    --secondary-text: gray;
+    --primary-color: mediumpurple; /* Le violet clair */
+    --accent-color: deeppink;
+    
+}
+body.darkmode 
+{ 
+     font-family: "Oswald", sans-serif;
+	--base-color: black;           /* Fond de page */
+    --base-variant: #1a1a1a;       /* Gris très sombre (Sublime le colorera en gris) */
+    --text-color: whitesmoke;      /* Texte blanc doux */
+    --secondary-text: lightgray;   /* Texte moins important */
+    --primary-color: mediumorchid; /* Le violet/rose de tes boutons */
+    --accent-color: crimson; 
+    
+}
+body 
+{
+    font-family: "Oswald", sans-serif;
+	background-color: var(--base-color) !important;
+	color: var(--text-color);
+    transition: 0.3s;
+}
+#carte 
+{
+	font-size: rem;
+	width: 1000px;
+	margin: 0 auto;
+	
+	color:var(--text-color);
+	text-align:center;
+	align-content:center;
+	font-family: century Gothic
+}
+button {
+    background-color: var(--accent-color);
+    color: mediumpurple;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ul 
+li {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;   
+}       
+.header-controls {
+    display: flex;             
+    justify-content: space-between;     
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding-left: 100px !important; 
+}
+
+
+
+.cal-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer{background-color: darkblue; /* Couleur sombre par défaut */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px; /* Espace entre ta liste et le bas */
+    width: 100%;
+    border-top: 2px solid #555;
+    font-size: 0.9rem;
+} 
+footer p {
+     font-family: "Oswald", sans-serif;
+    margin: 5px 0; /* Petit espace entre les lignes de texte */
+}
+.hero-section {
+    display: flex;            
+    align-items: center;      
+    justify-content: space-between; 
+    gap: 40px;                
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;            
+}
+
+.hero-texte {
+    flex: 1;
+    }
+
+.hero-texte h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+.hero-texte h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.hero-texte p {
+     font-family: "Oswald", sans-serif;
+    color: #718096;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+.hero-image {
+    flex: 1;                   
+    display: flex;
+    justify-content: center; 
+    justify-content: space-between;  
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 350px;          
+    height: auto;
+    border-radius: 12px;      
+    object-fit: cover;
+}

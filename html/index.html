@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<hea
+	<meta charset="utf-8">
+	<title>Bienvenue sur mon portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="header-controls pe-4">
+            <button id="theme-btn">Basculer le thème</button>
+                <div class="d-flex flex-row gap-2" style="white-space: nowrap; padding-right: 100px;">
+                    <a href="#projets" class="btn btn-primary mon-bouton">Projets </a>
+                    <a href="#propos" class="btn btn-primary mon-bouton">A PROPOS</a>
+                </div>
+        </div>
+
+        
+    </header>
+        
+    <main id="carte">
+
+            <section class="hero-section">
+                <div class="hero-texte">
+                    <h1>YOMENOU STEVENS</h1>
+                    <p>diplomé d'un baccalaureat en informatique</p>
+                    <div class="hero-boutons">
+                        
+                        <a href="code2.html" class=" btn btn-info" target="_blank" rel="noopener noreferrer">Visualiser le CV</a>
+                    </div>
+                </div>
+                <div class="hero-image"> <img src="../img/photo.png" class="img-fluid" alt="Photo de stevens">
+                </div>
+
+            </section> 
+            <script>
+                const themeBtn = document.getElementById('theme-btn');
+                themeBtn.innerText='☀️ 🌙'
+                themeBtn.addEventListener('click', () => {
+                    document.body.classList.toggle('darkmode');
+                });
+            </script> 
+
+            <div id="projets"><h2>MES PROJETS</h2></div>
+            
+            <section id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel" >
+                <div class="carousel-inner " >
+                    <div class="carousel-item active " > 
+                            <article class="card mx-auto" style="width: 18rem">
+                                <img src="../img\planning-projet.png"  class="img-fluid" alt="planing" >
+                                <div class="card-body">
+                                    <h5 class="card-title">planning-projet</h5>
+                                    <p class="card-text">Site de planning qui vous permet planifier vos tache</p>
+                                    <a href="https://niguime.github.io/Moon.github.io/" class="btn btn-primary" target="_blank" rel="noopener noreferrer"> cliquez pour voir</a>
+                                </div>
+                            </article>
+                    </div>
+                    <div class="carousel-item  ">
+                        <article class="card mx-auto" style="width: 18rem; ">
+                            <img src="../img\mastermind.png" class="img-fluid" alt="mastermind">
+                            <div class="card-body">
+                                <h5 class="card-title">Mastermind</h5>
+                                <p class="card-text">mini-jeu crée sur pyhton inspiré du jeu mastermind dont le but est deviné une combonaison de code génerer aléatoirement </p>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>    
+            </section>
+            <div id="propros"> <h2>A PROPROS</h2></div>
+            <div class="hero-image"> <img src="../img\about-us.jpg" alt="about us" width="150" height="25" loading="lazy"> <p>Passionné par les technologies et doté de bases solides en
+            programmation. je transforme mes idées en projets
+            COMPETENCES:HTML,CSS,Python, GIT</p></div>
+
+    </main>
+    <footer style="background-color: rgb(54, 47, 96); color: white; text-align: center; padding: 30px 100px; margin-top: 60px;">
+        <p><strong>CONTACTEZ-MOI</strong></p>
+        <p>
+            Yomenoustevens@gmail.com 
+            <a href="https://www.linkedin.com/in/stevens-yomenou-03065b31a/" class="cal-link" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/?size=30&id=8808&format=png&color=ffffff" alt="LinkedIn" style="vertical-align: middle; margin-left: 10px; width: 24px; height: 24px;">
+            </a>
+        </p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
